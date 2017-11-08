@@ -1,7 +1,7 @@
 package my.graph;
 
 public class VNode {
-	char data;
+	int data;
 	Edge firstEdge;
 
 	// 添加一条边
@@ -37,6 +37,7 @@ public class VNode {
 		Edge temp2 = temp.next;
 		while (temp2 != null) {
 			if (temp2.vex == vex1) {
+//				System.out.println("fdggfd"+vex1);
 				temp.next = temp2.next;// 删除节点
 				return true;
 			}
